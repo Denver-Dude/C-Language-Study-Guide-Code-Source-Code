@@ -1,33 +1,36 @@
 // Write a C program to perform input/output of all basic data types.
 #include <stdio.h>
+
 int main() {
-    int intVar;
-    float floatVar;
-    double doubleVar;
-    char charVar;
-    char strVar[100];
+    int day;
 
-    printf("Enter an integer: ");
-    scanf("%d", &intVar);
+    printf("Enter day number (1-7): ");
+    scanf("%d", &day);
+    switch(day) {
+        case 1:
+            printf("Sunday");
+            break;
+        case 2:
+            printf("Monday");
+            break;
+        case 3:
+            printf("Tuesday");
+            break;
+        case 4:
+            printf("Wednesday");
+            break;
+        case 5:
+            printf("Thursday");
+            break;
+        case 6:
+            printf("Friday");
+            break;
+        case 7:
+            printf("Saturday");
+            break;
+        default:
+            printf("Invalid input! Please enter a number between 1 and 7.");
+    }
 
-    printf("Enter a float: ");
-    scanf("%f", &floatVar);
-
-    printf("Enter a double: ");
-    scanf("%lf", &doubleVar);
-
-    printf("Enter a character: ");
-    scanf("%c", &charVar);
-
-    printf("Enter a string (no spaces): ");
-    scanf("%s", strVar);
-
-    printf("\nYour Values were:\n");
-    printf("Integer: %d\n", intVar);
-    printf("Float: %.2f\n", floatVar);
-    printf("Double: %.4lf\n", doubleVar);
-    printf("Character: %c\n", charVar);
-    printf("String: %s\n", strVar);
-    
     return 0;
 }
