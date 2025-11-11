@@ -1,4 +1,4 @@
-// Write a C program to perform input/output of all basic data types.
+// Write a C program to enter two numbers and find their sum.
 #include <stdio.h>
 int main() {
     int num1, num2, sum;
